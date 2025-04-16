@@ -1,0 +1,25 @@
+//package =>
+npm init
+npm i express
+npm i ejs
+npm i mongoose
+type nul > app.js
+
+//model: listing
+title -> string
+description -> string
+image(url) -> string
+price -> Number
+location -> string
+country -> string
+
+//testListing
+//init for initial database
+//data.js => sample data hai
+//index.js => logic to connect with sample data
+
+//creating reviews=>
+new model:review [listing -> reviews : one -> many]
+->CREATE REVIEW
+1.setting up review form
+

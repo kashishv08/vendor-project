@@ -1,0 +1,125 @@
+body {
+  font-family: "Plus Jakarta Sans", serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+#website-name {
+  color: #fe424d !important;
+  font-weight: bolder;
+  font-size: 34px;
+}
+.fa-magnifying-glass-location {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.f-info {
+  text-align: center;
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+}
+.listing_link {
+  text-decoration: none !important;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img-top {
+  border-radius: 2% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  font-weight: 400 !important;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.btn {
+  background-color: #fe424d !important;
+  border: none !important;
+  color: white !important;
+}
+.show-img {
+  height: 50vh;
+}
+.btns {
+  display: flex;
+}
+.edit-btn {
+  margin-left: 280px !important;
+  margin-bottom: 1rem !important;
+}
+.del-button {
+  background-color: black !important;
+  color: white;
+  border: none !important;
+  margin-left: 20px !important;
+  margin-bottom: 1rem !important;
+}
+.review-del-btn {
+  background-color: black !important;
+  color: white;
+  border: none !important;
+}
+/* map */
+#map {
+  height: 400px;
+  width: 100vh;
+  margin-bottom: 10px;
+}
+.state-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+.marker {
+  color: red;
+}
