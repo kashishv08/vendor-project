@@ -3,7 +3,8 @@ const router = express.Router();
 let User = require("../models/user.js");
 const wrapAsync = require("../utils/wrapAsync.js");
 const passport = require("passport");
-const { saveRedirectUrl } = require("../middleware.js");
+const { saveRedirectUrl, isLoggedIn } = require("../middleware.js");
+const Listing = require("../models/listing.js");
 
 const userController = require("../controllers/user.js");
 
@@ -25,5 +26,20 @@ router
   );
 
 router.get("/logout", userController.logout);
+
+router.get("/vendor/dashboard", isLoggedIn, async (req, res) => {
+  const listings = await Listing.find({ owner: req.user._id });
+  res.render("dashboard/vendor", { listings });
+});
+
+router.get("/admin/dashboard", isLoggedIn, async (req, res) => {
+  if (req.user.role !== "admin") {
+    req.flash("error", "Access denied.");
+    return res.redirect("/");
+  }
+  const listings = await Listing.find({});
+  const users = await User.find({});
+  res.render("dashboard/admin", { listings, users });
+});
 
 module.exports = router;

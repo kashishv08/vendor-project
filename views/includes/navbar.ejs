@@ -30,7 +30,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" id="website-name" href="/listings">Wander Way</a>
+        <a class="nav-link" id="website-name" href="/listings">VendorConnect</a>
       </div>
 
       <div class="search-bar ms-auto">
@@ -56,6 +56,22 @@
         <a href="/logout" class="nav-link"><b>Log out</b></a>
         <% } %>
       </div>
+
+      <% if (currUser) { %> <% if (currUser.role === "admin") { %>
+      <a
+        class="nav-link btn btn-sm ms-2 px-3 py-1 text-white bg-gradient-orange rounded-pill"
+        href="/admin/dashboard"
+      >
+        <i class="fa-solid fa-user-shield me-1"></i> Admin Panel
+      </a>
+      <% } else if (currUser.role === "vendor") { %>
+      <a
+        class="nav-link btn btn-sm ms-2 px-3 py-1 text-white bg-gradient-purple rounded-pill"
+        href="/vendor/dashboard"
+      >
+        <i class="fa-solid fa-store me-1"></i> Vendor Panel
+      </a>
+      <% } %> <% } %>
     </div>
   </div>
 </nav>
