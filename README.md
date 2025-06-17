@@ -24,3 +24,29 @@
 git clone https://github.com/kashishv08/wander_way_project.git
 cd vendor-project
 npm install
+
+## 📸 Preview
+
+### 🏠 Front Page
+
+![Front Page](./public/screenshots/Screenshot%202025-06-17%20170405.png)
+
+### 🔐 Signup Page
+
+![Signup Page](./public/screenshots/Screenshot%202025-06-17%20170558.png)
+
+### ⭐ Rating & Review
+
+![Rating and Review Page](./public/screenshots/Screenshot%202025-06-17%20170718.png)
+
+### ➕ New Listing Page
+
+![New Listing Page](./public/screenshots/Screenshot%202025-06-17%20170743.png)
+
+### 🛠️ Admin Dashboard
+
+![Admin Dashboard](./public/screenshots/Screenshot%202025-06-17%20170829.png)
+
+### 🗺️ Vendor Map View
+
+![Map View](./public/screenshots/Screenshot%202025-06-17%20171018.png)
