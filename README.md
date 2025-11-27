@@ -51,5 +51,4 @@ npm install
 
 ![Map View](./public/screenshots/Screenshot%202025-06-17%20171018.png)
 
-### Live Link : https://wander-way-project.onrender.com/listings
 
